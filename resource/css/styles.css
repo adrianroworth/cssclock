@@ -331,8 +331,8 @@ code {
 	margin: 10px 0 0 20px;
 }
 .page header .social .twitter-follow-button  {
-	float: left;
-	margin: 6px 0 0 20px;
+	float: right;
+	margin: 6px 20px 0 0px;
 }
 .page .about {
 	background: #333333 url('../images/greybackground.png') repeat top left fixed;

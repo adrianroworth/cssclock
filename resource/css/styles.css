@@ -350,16 +350,6 @@ code {
 	margin: 0 0 20px 0;
 	text-shadow: 1px 1px 2px #222222;
 }
-.page .about .title {
-	font-size: 80px;
-	color: #999900;
-	font-family: 'aerolitecpone';
-	text-shadow: 1px 1px 2px #000000;
-	margin: 0 0 30px 0;
-	width: 100%;
-	display: block;
-	line-height: 80px;;
-}
 .page footer {
 	background: #000000;
 	padding: 20px;

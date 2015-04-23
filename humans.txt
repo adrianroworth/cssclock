@@ -1,0 +1,17 @@
+/* TEAM */
+Developer: Adrian Roworth
+Site: http://www.adrianroworth.co.uk/
+Twitter: @adrianroworth
+From: Glasgow, Scotland
+
+
+/* THANKS */
+HTML5BP: http://html5boilerplate.com/
+Humanstxt: http://humanstxt.org/
+
+
+/* SITE */
+Last updated: 04/03/2014
+Language: English
+Doctype: HTML5
+IDE: Sublime Text, Notepad2

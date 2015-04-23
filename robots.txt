@@ -1,0 +1,7 @@
+User-agent: * 
+Disallow: /resource
+Disallow: /holding
+Disallow: 404.html
+Disallow: crossdomain.xml
+Disallow: LICENSE.md
+Disallow: README.md

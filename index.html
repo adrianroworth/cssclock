@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+
+	<head>
+	
+		<title>CSS Clock</title>
+		<script type="text/javascript" src="resource/js/core.js"></script>
+		<link rel="stylesheet" href="resource/css/styles.css" />
+		
+		
+		<meta property="og:title" content="CSS Clock" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://cssclock.com/" />
+		<meta property="og:image" content="http://www.cssclock.com/resource/images/facebook.jpg" />
+		<meta property="og:site_name" content="CSS Clock" />
+		<meta property="fb:admins" content="684945520" />
+		
+		<!-- 
+		
+			Just because you viewed my source, here is my lovely creators' details!
+		
+			@author Adrian Roworth
+			@twitter @adrianroworth
+			@website adrianroworth.co.uk
+			
+			
+			@date July 2013
+			@version 1.0
+			
+		 -->
+	
+	</head>
+	
+	<body>
+	
+		<div class="page">
+		
+		<div class="mouse-distance">
+		
+			<span>
+			
+				
+			
+			</span>
+		
+		</div>
+		
+			<header>
+			
+				<p class="title">CSS Clock</p>
+				<!-- p class="sub-title">by Adrian Roworth</p -->
+				
+				<div class="social">
+				
+					<a href="https://twitter.com/adrianroworth" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @adrianroworth</a>
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					
+					<a href="https://twitter.com/share" class="twitter-share-button" data-text="Fully working clock implemented in CSS!" data-hashtags="cssClock">Tweet</a>
+					<div class="fb-like" data-href="http://www.cssclock.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+				</div>
+			
+			</header>
+			
+			<div class="clock-container">
+			
+				<div class="clock">
+	
+					<div class="clock-edge">
+					
+						<div class="clock-face">
+						
+							<div class="interval-markers">
+								
+								<span class="hour-marker">1</span>
+								<span class="hour-marker">2</span>
+								<span class="hour-marker">3</span>
+								<span class="hour-marker">4</span>
+								<span class="hour-marker">5</span>
+								<span class="hour-marker">6</span>
+								<span class="hour-marker">7</span>
+								<span class="hour-marker">8</span>
+								<span class="hour-marker">9</span>
+								<span class="hour-marker">10</span>
+								<span class="hour-marker">11</span>
+								<span class="hour-marker">12</span>
+								
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+								<span class="minute-marker"></span>
+							
+							</div>
+							
+							<div class="day-of-month">
+							
+								<ul id="day-name">
+								
+									<li>Sun</li>
+									<li>Mon</li>
+									<li>Tue</li>
+									<li>Wed</li>
+									<li>Thu</li>
+									<li>Fri</li>
+									<li>Sat</li>
+								
+								</ul>
+								
+								<ul id="day-number">
+								
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+									<li>6</li>
+									<li>7</li>
+									<li>8</li>
+									<li>9</li>
+									<li>10</li>
+									<li>11</li>
+									<li>12</li>
+									<li>13</li>
+									<li>14</li>
+									<li>15</li>
+									<li>16</li>
+									<li>17</li>
+									<li>18</li>
+									<li>19</li>
+									<li>20</li>
+									<li>21</li>
+									<li>22</li>
+									<li>23</li>
+									<li>24</li>
+									<li>25</li>
+									<li>26</li>
+									<li>27</li>
+									<li>28</li>
+									<li>29</li>
+									<li>30</li>
+									<li>31</li>
+								
+								</ul>
+							
+							</div>
+							
+							<div class="hands">
+								
+								<div class="second-hand hand">
+								
+									<span class="pivot"></span>
+									<span class="stem"></span>
+								
+								</div>
+								
+								<div class="minute-hand hand">
+								
+									<span class="pivot"></span>
+									<span class="stem"></span>
+								
+								</div>
+								
+								<div class="hour-hand hand">
+								
+									<span class="pivot"></span>
+									<span class="stem"></span>
+									<span class="head">
+										<span class="back"></span>
+										<span class="front"></span>
+									</span>
+								
+								</div>
+							
+								<span class="centre"></span>
+								
+								<!-- span class="screw"></span -->
+							
+							</div>
+							
+							<div class="digital-clock">
+							
+								<ul id="d-hour">
+								
+									<li>00</li>
+									<li>01</li>
+									<li>02</li>
+									<li>03</li>
+									<li>04</li>
+									<li>05</li>
+									<li>06</li>
+									<li>07</li>
+									<li>08</li>
+									<li>09</li>
+									<li>10</li>
+									<li>11</li>
+									<li>12</li>
+									<li>13</li>
+									<li>14</li>
+									<li>15</li>
+									<li>16</li>
+									<li>17</li>
+									<li>18</li>
+									<li>19</li>
+									<li>20</li>
+									<li>21</li>
+									<li>22</li>
+									<li>23</li>
+									
+								</ul>
+							    
+								<ul id="d-minute">
+							    
+									<li>00</li>
+									<li>01</li>
+									<li>02</li>
+									<li>03</li>
+									<li>04</li>
+									<li>05</li>
+									<li>06</li>
+									<li>07</li>
+									<li>08</li>
+									<li>09</li>
+									<li>10</li>
+									<li>11</li>
+									<li>12</li>
+									<li>13</li>
+									<li>14</li>
+									<li>15</li>
+									<li>16</li>
+									<li>17</li>
+									<li>18</li>
+									<li>19</li>
+									<li>20</li>
+									<li>21</li>
+									<li>22</li>
+									<li>23</li>
+									<li>24</li>
+									<li>25</li>
+									<li>26</li>
+									<li>27</li>
+									<li>28</li>
+									<li>29</li>
+									<li>30</li>
+									<li>31</li>
+									<li>32</li>
+									<li>33</li>
+									<li>34</li>
+									<li>35</li>
+									<li>36</li>
+									<li>37</li>
+									<li>38</li>
+									<li>39</li>
+									<li>40</li>
+									<li>41</li>
+									<li>42</li>
+									<li>43</li>
+									<li>44</li>
+									<li>45</li>
+									<li>46</li>
+									<li>47</li>
+									<li>48</li>
+									<li>49</li>
+									<li>50</li>
+									<li>51</li>
+									<li>52</li>
+									<li>53</li>
+									<li>54</li>
+									<li>55</li>
+									<li>56</li>
+									<li>57</li>
+									<li>58</li>
+									<li>59</li>
+							      
+								</ul>
+							    
+								<ul id="d-second">
+							    
+									<li>00</li>
+									<li>01</li>
+									<li>02</li>
+									<li>03</li>
+									<li>04</li>
+									<li>05</li>
+									<li>06</li>
+									<li>07</li>
+									<li>08</li>
+									<li>09</li>
+									<li>10</li>
+									<li>11</li>
+									<li>12</li>
+									<li>13</li>
+									<li>14</li>
+									<li>15</li>
+									<li>16</li>
+									<li>17</li>
+									<li>18</li>
+									<li>19</li>
+									<li>20</li>
+									<li>21</li>
+									<li>22</li>
+									<li>23</li>
+									<li>24</li>
+									<li>25</li>
+									<li>26</li>
+									<li>27</li>
+									<li>28</li>
+									<li>29</li>
+									<li>30</li>
+									<li>31</li>
+									<li>32</li>
+									<li>33</li>
+									<li>34</li>
+									<li>35</li>
+									<li>36</li>
+									<li>37</li>
+									<li>38</li>
+									<li>39</li>
+									<li>40</li>
+									<li>41</li>
+									<li>42</li>
+									<li>43</li>
+									<li>44</li>
+									<li>45</li>
+									<li>46</li>
+									<li>47</li>
+									<li>48</li>
+									<li>49</li>
+									<li>50</li>
+									<li>51</li>
+									<li>52</li>
+									<li>53</li>
+									<li>54</li>
+									<li>55</li>
+									<li>56</li>
+									<li>57</li>
+									<li>58</li>
+									<li>59</li>
+							      
+								</ul>
+							    
+							</div>
+							
+							<div class="make-model">
+								<span class="make">adrian roworth</span>
+								<span class="model">1.0</span>
+							</div>
+						
+						</div>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+			
+			<div class="about">
+			
+				<!-- p class="title">The CSS Clock</p -->
+				
+				<p>Welcome to the home of the CSS Clock. As a clock is essential to day-to-day life, it wouldn't make sense if there was no CSS version.</p>
+				
+				<p>This Clock works purely with CSS, using Javascript only to set the initial position of the hands and digits..</p>
+				
+				<p>Most of the elements are absolutely positioned to achieve the effect seen here. The interval markers are positioned absolutely, and rotated using pure CSS.</p>
+				
+				<p>To have the animation of the clock hands and digits, CSS keyframes are being used, but this is where the javascript comes in! CSS Keyframes allow you to have a set animation from one thing to another, e.g. from 0 degrees of a circle to 360 degrees. That's all well and fine if you want it to always go from 12 0'clock to 12 o'clock. But we want it to start from the time that the user visited the page, and in order to do that we get the current date using Javascript, then get the seconds, minutes, and hours from that.</p>
+				
+				<p>After we have the current time, we can then determine how many seconds have gone by in the day, then set the starting point of each hand/digit accordingly. The way that the current spec allows you to set an animation starting point is by using a negative value within the <code>CSS</code> property, e.g.  <code>.second-hand {-webkit-animation-delay: -17s;}</code>. What this does is counter-intuitive, this sets the animation to start from where it would be after 17 seconds, but it starts immediately. This is exactly what we wanted for this!</p>
+				
+				<p>This new <code>CSS</code> rule is then injected in to the head of the document, and then civilisation is restored.</p>
+
+			</div>
+		
+			<footer>
+			
+				<p>I am a frontend web developer and freelancer from Scotland.</p>
+				<a class="site" href="http://www.adrianroworth.co.uk" target="_blank">adrianroworth.co.uk</a>
+			
+			</footer>
+		</div>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62159244-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+
+</html>
